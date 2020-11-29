@@ -30,13 +30,15 @@ Of course, you could save the path and file name in separate columns and combine
 Also, I add one more variable which is "type." So every image isn't saved in the same directory, I add a type of image being saved. This is used to pull the correct path for the image. This allows you to use the same code to save images to different directories. Using this method, you can group images into their proper directories.
 
 
-To display an image gallery for an item, search for all filenames with the hash code in it (using wildcards).
+To display an image gallery for an item, search all images with the hash code in the filename (using wildcards).
 
 Note: You might want to add a check to make sure the hash codes are unique. However, between the hash and the file name, I've never had a hash duplicate or create a duplicate file name.
 
 After uploading the images, I bind the thumbs to an image gallery. When you click on the thumbnail, it loads up the image using colorbox (https://www.jacklmoore.com/colorbox/).
 
 The demo doesn't require a login. For the WebAPI security, you can add [Authorize] to the controller and this will check that calls are coming from someone logged into the site. Since this demo doesn't require a login, it would be kind of pointless to turn this on. See:
+
+-=-=-=-
 
    Using the [Authorize] Attribute
 
@@ -45,6 +47,8 @@ The demo doesn't require a login. For the WebAPI security, you can add [Authoriz
    without invoking the action.
 
    See: https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/
+   
+-=-=-=-   
 
 The absolute hardest things in this project were dealing with the following errors:
 
