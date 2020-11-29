@@ -73,7 +73,9 @@ One other thing with moving to a production server: MAKE SURE TO COPY ALL THE NE
 
 Using The Code:
 
-Open up the default.aspx page. Click on the "Attch" button in the GridView.
+This is a straight Asp.Net website. Fire it up in IIS or open it using Visual Studio and view the default.aspx page in a browser.
+
+Using IIS, browse to the site and open up the default.aspx page. Click on the "Attch" button in the GridView.
 On the page that opens up, upload an image or PDF.
 
 Of course, this requires users in the user table. If you click "Delete All," you are going to have to add some users back before this demo works.
@@ -84,7 +86,9 @@ In production, I actually encrypt and decrypt all URL variables. Though not hard
 
 Thumbnails of PDFs are also created. This was pretty involved and is also beyond the scope of this project.
 
-If you open up the upload page in a new tab, you can close the tab using javascript and not have to worry with back buttons. This also makes it easy to use the page with different types of uploads. For example, user image attachments and product images can be uploaded from the same upload page. You just have to tell it what type of page loaded it. That way you can save images in separate directories.
+If you open up the upload page in a new tab, you can close the tab using javascript and not have to worry with back buttons. This also makes it easy to use the page with different types of uploads. For example, user image attachments and product images can be uploaded from the same upload page. You just have to tell it what type of page called it, and code accordingly to pass images the correct paths to the appropriate directory.
+
+See the OneZeroEight link for more info on CORS. If you have the WebAPI located at a diffrent domain than the domain that is sending the data to it, you have to turn on CORS. Since that isn't the case with this demo, it is not turned on.
 
 
 
