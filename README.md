@@ -80,6 +80,8 @@ On the page that opens up, upload an image or PDF.
 
 Of course, this requires users in the user table. If you click "Delete All," you are going to have to add some users back before this demo works.
 
+*** Note ***: When you deploy this, you need to make all the URLs use SSL. It will error out trying to use the aspnetcdn from a secure site if you attempt to use http:// to get it. 
+
 Todo:
 
 In production, I actually encrypt and decrypt all URL variables. Though not hard, That was a little beyond the scope of this project.
