@@ -50,7 +50,7 @@ The demo doesn't require a login. For the WebAPI security, you can add [Authoriz
    
 -=-=-=-   
 
-The absolute hardest things in this project were dealing with the following errors:
+The absolute hardest things in this project was dealing with the following errors:
 
 https://stackoverflow.com/questions/40727898/system-web-routing-routecollection-does-not-contain-a-definition-for-maphttpr
 https://stackoverflow.com/questions/27250581/could-not-load-file-or-assembly-system-web-http-version-5-2-2-0
